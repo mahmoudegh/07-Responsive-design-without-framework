@@ -1,0 +1,32 @@
+p{margin-bottom: 450px}
+
+
+/* Mobile & Tablet Rules */
+@media (max-width: 767px)
+{
+	p{color: red; font-size: 40px; background-color: #333}
+}
+
+/* Small Screen Rules */
+@media (min-width: 768px)
+{
+	p{color: green; font-size: 40px; background-color: #333}
+}
+
+/* Medium Screen Rules */
+@media (min-width: 992px)
+{
+	p{color: blue; font-size: 40px; background-color: #333}
+}
+
+/* Large Screen Rules */
+@media (min-width: 1200px)
+{
+	p{color: pink; font-size: 40px; background-color: #333}
+}
+
+/* Used To Make Change To Prpperties Only At The Selected width */
+@media (min-width: 768px) and (max-width: 991px)
+{
+	p{padding: 50px}
+}

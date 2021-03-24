@@ -1,0 +1,8 @@
+/*Mobile & Tablet Rules*/
+@media (max-width: 767px)
+{
+	p{color: red}
+}
+
+
+p{margin-bottom: 450px}

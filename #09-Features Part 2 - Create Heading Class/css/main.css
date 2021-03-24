@@ -1,0 +1,149 @@
+/* Start Global Rules */
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: Arial, Tahoma
+}
+/* End Global Rules */
+
+
+
+/* Start Header */
+.header
+{
+	background: url('../images/header.jpg') no-repeat top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+	position: relative
+}
+
+
+.header .overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	background-color: rgba(0, 168, 255, 0.5);
+}
+
+
+.header .overlay h1
+{
+	 font-size: 60px;
+	 margin-top: 100px;
+}
+
+
+.header .overlay .plan
+{
+	border: 4px solid #FFF;
+	padding: 20px;
+	font-size: 24px;
+	width: 48%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%
+}
+
+
+.header .overlay .order
+{
+	border: 4px solid #FFF;
+	padding: 20px;
+	font-size: 24px;
+	margin: 30px 1% 0
+}
+
+
+
+  @media (min-width: 500px) and (max-width: 559px)/*custom media not found in bootstrap*/
+{
+	 h1{font-size: 40px !important}
+
+	.header .overlay .plan
+	{
+		float: none;
+		margin: 0 auto 20px;
+	  font-size: 14px
+	}
+}
+
+
+@media (min-width: 560px) and (max-width: 767px)/*Custom From Me*/
+{
+	.header .overlay .plan
+	{
+		float: none;
+		margin: 0 auto 20px;
+	  font-size: 18px
+	}
+}
+/* End Header */
+
+
+
+/* Start Features */
+.features{padding: 30px 0}
+.features .h1{font-size: 50px; color: #555}
+
+.features .feat
+{
+	/* float: left; ==>  Use Framework */
+	width: 31.3333%;
+	margin-left: 1%;
+	margin-right: 1%;
+	color: #555
+}
+
+.features .feat h2{margin: 10px 0 8px}
+
+.features .feat p{line-height: 1.6; margin: 0}
+/* End Features */
+
+
+
+/* Mobile&Tablet Rules */
+@media (max-width: 767px)
+{
+/* .visible-xs{display: block !important} */
+.hidden-xs{display: none}
+}
+
+/* Small Screen Rules */
+@media (min-width: 768px)
+{
+.container{width: 750px}
+.visible-sm{display: block !important}
+}
+
+/* Medium Screen Rules */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+.container{width: 970px}
+.visible-md{display: block !important}
+}
+
+/* Large Screen Rules */
+@media (min-width: 1200px)
+{
+.container{width: 1170px}
+.visible-lg{display: block !important}
+}
+
+
+/* Start My Framework */
+.text-center{text-align: center;}
+.container{margin: auto; padding-left: 15px; padding-right: 15px}
+.clear-fix{clear: both}
+.visible-xs, .visible-sm, .visible-md, .visible-lg{display: none}
+.float-left{float: left}
+.float-right{float: right}
+.h1{font-size: 2em}/*The Page Must Contain Single h1*/
+/* End My Framework */
